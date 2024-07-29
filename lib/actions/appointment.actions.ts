@@ -21,7 +21,7 @@ export const createAppointment = async (
     const newAppointment = await databases.createDocument(
       DATABASE_ID!,
       APPOINTMENT_COLLECTION_ID!,
-      ID.unique(),
+      ID.unique(),  
       appointment
     );
 

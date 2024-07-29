@@ -27,6 +27,8 @@ export const createUser = async (user: CreateUserParams) => {
       user.name
     );
 
+    console.log("NEW USER: ", newuser);
+
     return parseStringify(newuser);
   } catch (error: any) {
     // Check existing user
@@ -96,12 +98,18 @@ export const registerPatient = async ({
 
 // GET PATIENT
 export const getPatient = async (userId: string) => {
+  console.log("USER ID: ", userId);
+  console.log("DATABASE ID: ", DATABASE_ID);
+  console.log("PATIENT COLLECTION ID: ", PATIENT_COLLECTION_ID);
+  
   try {
     const patients = await databases.listDocuments(
       DATABASE_ID!,
       PATIENT_COLLECTION_ID!,
-      [Query.equal("userId", [userId])]
+      [Query.equal("userId", userId)]
     );
+
+    console.log("PATIENTS: ", patients);
 
     return parseStringify(patients.documents[0]);
   } catch (error) {
