@@ -1,8 +1,11 @@
-# Patient Crest
+![patient-crest-1](https://github.com/user-attachments/assets/28560bd6-7a94-4530-82df-d4c873890535)# Patient Crest
 
 ## Healthcare Appointment Management System
 
 This project is a healthcare appointment management system built using cutting-edge technologies to provide a seamless experience for patients and administrators. It leverages **Next.js** for the frontend, **Appwrite** for backend services, **TypeScript** for static typing, **TailwindCSS** and **ShadCN** for styling, and **Twilio** for SMS notifications.
+
+![patient-crest-1](https://github.com/user-attachments/assets/d4961617-aa05-4ec2-a6fb-1b8499e6b0cb)
+
 
 ## Table of Contents
 
